@@ -42,5 +42,11 @@ group :development, :test do
   gem 'capybara', '1.1.2'
 end
 
-gem 'skeleton-rails', :git => "git@github.com:namick/skeleton-rails.git"
+group :development do
+  gem 'skeleton-rails', :git => "git@github.com:namick/skeleton-rails.git"
+end
+
+group :production do
+  gem 'pg'
+end
 
