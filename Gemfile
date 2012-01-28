@@ -40,13 +40,11 @@ gem 'jquery-rails'
 group :development, :test do
   gem 'rspec-rails', '2.8.1'
   gem 'capybara', '1.1.2'
+  gem 'guard-rspec'
+  gem 'guard-spork'
 end
 
 group :development do
   gem 'skeleton-rails', :git => "git@github.com:namick/skeleton-rails.git"
-end
-
-group :production do
-  gem 'pg'
 end
 
